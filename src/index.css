@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+ul li {
+  list-style-type: none;
+}
+#learn .card-body,
+#learn-react .card-body {
+  border: none;
+  padding: 1rem 0;
+}
+
+#you-learn p {
+  margin: 0;
+}
+.m-bottom {
+  margin-bottom: 30px;
+}
+.m-left {
+ margin-left: 30px;
+}
+.bullet-yellow,
+.bullet-blue,
+.bullet-pink {
+  position: relative;
+}
+.bullet-yellow::before,
+.bullet-blue::before,
+.bullet-pink::before  {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 61px;
+  top: 54px;
+  left: 0;
+}
+.bullet-yellow::before {
+  background-color: #f1cb49;
+}
+.bullet-blue::before {
+  background-color: #4db2ff;
+}
+
+
+.bullet-yellow::after,
+.bullet-blue::after,
+.bullet-pink::after {
+  position: absolute;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  top: 12px;
+  left: -12px;
+}
+
+.bullet-yellow::after {
+  border: 3px solid #eebe1c;
+  background: #f1cb49;
+}
+.bullet-blue::after {
+  border: 3px solid #1a9cff;
+  background: #4db2ff;
+}
+.bullet-pink::after {
+  border: 3px solid #fc31c7;
+  background: #fd63d5;
+}

@@ -4,7 +4,7 @@ npm i @babel/core @babel/preset-env @babel/plugin-proposal-class-properties babe
  npm i webpack webpsck-cli -D
  npm i lodash-es  
 
- //build dist Folde
+ //build dist Folder
  npm run build
 
 //install loaders

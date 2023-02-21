@@ -3,9 +3,337 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+  <title>Bootcamp Frontend</title>
 </head>
-hola
 <body>
+  
+<!-- Navbar -->
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark  py-3 fixed-top">
+  <div class="container">
+    <a href="#" class="navbar-brand">Bootcamp Frontend</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navmenu" aria-controls="offcanvasDarkNavbar"">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navmenu" class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="#navmenu" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">FB</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul id="navbarList" class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</nav>
+<!-- Showcase -->
+<section class="bg-dark text-light p-5 p-lg-0pt-lg-5 text-center text-sm-start">
+  <div class="container">
+    <div class="d-sm-flex align-items-center justify-content-between">
+      <div>
+        <h1>Aprende <span class="text-warning">desarrollador web </span>con HTML, CSS y JavaScript desde cero</h1>
+        <p class="lead my-4">Aprende con nuestro equipo de profesionales y tutores expertos, en un programa online de 12 semanas con clases en vivo.
+
+        </p>
+        <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+          iniciar la inscripción
+        </button>
+      </div>
+      <img class="img-fluid w-50 d-none d-sm-block" src="./src/images/showcase.svg">
+    </div>
+  </div>
+</section>
+<!-- Newsletter Begin Mailchimp Signup Form -->
+<section class="p-5 bg-primary text-light">
+  <div class="container">
+
+    <div id="mc_embed_signup" class="row">
+      <div class="col-md">
+        <h3 class="mb-3 mb-md-0">Suscríbete a nuestra Newsletter</h3>
+      </div>
+      <div class="col-md">
+        <form action="https://googlemail.us21.list-manage.com/subscribe/post?u=ce013772ace0cb478af2f5c19&amp;id=6005109b14&amp;f_id=00328be1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self">
+          <div id="mc_embed_signup_scroll">
+          <div class="input-group news-input">
+            <input type="email" value="" name="EMAIL" class="form-control" placeholder="Email" id="mce-EMAIL" required>
+            <input type="submit" value="Enviar" name="subscribe" id="mc-embedded-subscribe" class="btn btn-dark btn-lg"></div>
+            <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+          </div>
+          <div id="mce-responses" class="clear foot">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div> 
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ce013772ace0cb478af2f5c19_6005109b14" tabindex="-1" value=""></div>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section id="you-learn"class="p-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md">
+        <ul>
+          <li class="m-bottom">
+            <div class="bullet-yellow">
+            </div>
+            <div class="m-left">
+              <p class="fs-3 fw-bold">12 Semanas</p>
+              <p class="fs-5">Contenido 100% Online</p>
+            </div>  
+          </li>
+          <li class="m-bottom">
+            <div class="bullet-blue">
+            </div>
+            <div class="m-left">
+              <p class="fs-3 fw-bold">Clases en vivo</p>
+              <p class="fs-5">Y grabaciones disponibles</p>
+            </div>  
+          </li>
+          <li class="m-bottom">
+            <div class="bullet-yellow">
+            </div>
+            <div class="m-left">
+              <p class="fs-3 fw-bold">Profesores</p>
+              <p class="fs-5">Expertos en la industria</p>
+            </div>  
+          </li>
+          <li class="m-bottom">
+            <div class="bullet-pink">
+            </div>
+            <div class="m-left">
+              <p class="fs-3 fw-bold">Proyecto Final</p>
+              <p class="fs-5">Construir una App apartir de los requerimientos</p>
+            </div>  
+          </li>
+        </ul>
+      </div>
+      <div class="col-md">
+        <img src="/src/images/classroom.png" class="img-fluid" alt="classrom">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Boxes -->
+<!-- <section class="p-5 text-light">
+  <div class="container">
+    <div class="row g-4 text-center">
+      <div class="col-md">
+        <div class="card bg-dark">
+          <div class="card-body">
+            <div class="fs-1 mb-3">
+              <i class="bi bi-laptop"></i>
+            </div>
+            <h3 class="card-title">
+              Virtual
+            </h3>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, libero? Pariatur cupiditate et omnis dignissimos?
+            </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card bg-secondary">
+          <div class="card-body">
+            <div class="fs-1 mb-3">
+              <i class="bi bi-person-square"></i>
+            </div>
+            <h3 class="card-title">Hybrid</h3>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum magni molestiae error eaque praesentium excepturi!
+            </p>
+            <a href="#" class="btn btn-dark">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="card bg-dark">
+          <div class="card-body">
+            <div class="fs-1 mb-3">
+              <i class="bi bi-people"></i>
+            </div>
+            <h3 class="cart-title">In Person</h3>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quae optio consectetur adipisicing harum id illo voluptate?
+            </p>
+            <a href="#" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- Learn Sections -->
+<section id="learn" class="p-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md">
+        <img src="./src/images/fundamentals.svg" class="img-fluid" alt="fundamentals">
+      </div>
+      <div class="p-5 col-md">
+        <h2>Aprenda los fundamentos</h2>
+        <p class="lead">
+          La currícula del programa de Desarrollo Frontend de Web Master describe los conocimientos y objetivos trazados para la formación de desarrolladores Frontend en el rango de 12 semanas. 
+        </p>
+        <p>Se compone de cursos y clases en vivo estructuradas de manera modular y secuencial para que cada estudiante avance según su nivel, a su propio ritmo. La formación y el diseño del plan de estudios está basada en lo descrito por los siguientes puntos:</p>
+        <p>
+          <a data-bs-toggle="collapse" href="#collapseFundamenals" role="button" aria-expanded="false" aria-controls="collapseFundamenals">
+            Leer mas
+          </a>
+        </p>
+        <div class="collapse" id="collapseFundamenals">
+          <div class="card card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<section id="learn-react" class="p-5 bg-dark text-light">
+  <div class="container">
+    <div class="row align-items justify-content-between">
+      <div class="col-md p-5">
+        <h2>Aprende React</h2>
+        <p class="lead">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius animi reprehenderit ex vitae minus asperiores!
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit laboriosam sunt eum iste eligendi a repudiandae similique ut in qui! Architecto, facere aut distinctio reiciendis repellat fuga ab alias sunt.</p>
+        <p>
+          <a data-bs-toggle="collapse" href="#collapseLearnReact" role="button" aria-expanded="false" aria-controls="collapseLearnReact">
+            Leer mas
+          </a>
+        </p>
+        <div class="collapse" id="collapseLearnReact">
+          <div class="card card-body bg-dark">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+          </div>
+        </div>
+      </div>
+      <div class="col-md">
+        <img src="./src/images/react.svg" class="img-fluid" alt="react">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Question Accordion -->
+<section class="p-5">
+  <div class="container">
+    <h2>Frequently Asked Question</h2>
+    <div class="accordion accordion-flush" id="accordionFlush">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Where exactly are you located?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+          <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequatur accusantium impedit, voluptatem beatae voluptatibus quas nostrum ut sit recusandae molestias explicabo deleniti ullam exercitationem consectetur eius in similique facilis quisquam distinctio repellat excepturi. Perspiciatis maiores porro non, ab saepe eaque eius assumenda explicabo dolores aliquam architecto repellat est quidem.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            How much does it cost to attend?
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
+          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente libero quibusdam cum enim, minus explicabo laborum eius dolor exercitationem vitae culpa deserunt soluta, voluptatibus corrupti, recusandae vero ex eligendi at asperiores est ullam! Totam culpa ipsum aliquam reiciendis obcaecati repellendus deserunt soluta unde dolores veritatis minus pariatur, molestiae saepe facilis voluptates ad ipsa? Laborum.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Will you help me find a job?
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium velit beatae ratione aspernatur molestias optio dolorum praesentium, sequi esse qui rem? Omnis recusandae repellendus eaque laboriosam cupiditate sequi assumenda porro!</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            Where exactly are you located?
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlush">
+          <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequatur accusantium impedit, voluptatem beatae voluptatibus quas nostrum ut sit recusandae molestias explicabo deleniti ullam exercitationem consectetur eius in similique facilis quisquam distinctio repellat excepturi. Perspiciatis maiores porro non, ab saepe eaque eius assumenda explicabo dolores aliquam architecto repellat est quidem.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            Where exactly are you located?
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlush">
+          <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati consequatur accusantium impedit, voluptatem beatae voluptatibus quas nostrum ut sit recusandae molestias explicabo deleniti ullam exercitationem consectetur eius in similique facilis quisquam distinctio repellat excepturi. Perspiciatis maiores porro non, ab saepe eaque eius assumenda explicabo dolores aliquam architecto repellat est quidem.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Our Instructors -->
+<section class="p-5 bg-primary">
+  <div class="container">
+   <h2 class="text-center text-white">Our Instructors</h2>
+   <p class="text-center text-white">Our instructors all have 5+ years working as a web developer in the industry</p>
+   <div id="instructorList" class="row g-4">
+   </div>
+  </div>
+</section>
+<!-- Contact & Map -->
+<section class="p-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md">
+        <h2 class="text-center mb-4">Contact Info</h2>
+        <ul class="list-group list-group-flush lead">
+          <li class="list-group-item">
+            <span class="fw-bold">Main Location:</span> 50 Main ist Boston MA
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Enrollment Phone:</span >555 -5555
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Student Phone:</span> 333-3333
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Enrollment Email:</span> enroll@frontetbc.test
+          </li>
+          <li class="list-group-item">student@frontentbd
+          </li>
+        </ul>
+      </div>
+      <div class="col-md d-none d-md-block">
+        <div id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1631.3503830413472!2d-71.2802500547937!3d42.30790606619926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e378cd8424d2db%3A0x11a27d1602d815b7!2sBoston%20Leadership%20Institute!5e0!3m2!1sen!2sde!4v1676542194151!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="p-5 bg-dark text-white text-center position-relative">
+  <div class="container">
+    <p class="lead">Copyright &copy; 2023 Frontend Bootcamp</p>
+    <a href="#" class="position-absolute bottom-0 end-0 p-5">
+      <i class="bi bi-arrow-up-circle h1"></i>
+    </a>
+  </div>
+</footer>
+  <!-- Modal -->
+  <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
 </body>
 </html>
